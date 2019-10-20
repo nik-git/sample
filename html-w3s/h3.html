@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>clipboard</title>
+    </head>
+    <body>
+        <h1>clipboard</h1>
+        <textarea id='ta1' row='4' cols="10">Text area</textarea>
+        <script>
+            var string1 = document.getElementById('ta1')
+            string1.focus();
+            string1.select();
+            string1.focus();
+            document.execCommand('copy')
+        </script>
+    </body>
+</html>

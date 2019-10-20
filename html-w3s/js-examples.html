@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<style>
+    #animate {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  background-color: red;
+}
+</style>
+<body>
+        <p><button onclick="myMove()">Click Me</button></p>
+        <div id ="animate"></div>
+        <script>
+            pos = 0;
+                function myMove() {
+                  var elem = document.getElementById("animate");
+                  var id = setInterval(fun2, 500);
+                  function fun2(){
+                    if (pos == 350) {
+                        clearInterval(id);
+                        } else {
+                  pos +=50;
+                  elem.style.top = pos + "px"; 
+                  elem.style.left = pos + "px"; 
+                  }
+    }
+}
+
+</script>
+</body>
+</html>
